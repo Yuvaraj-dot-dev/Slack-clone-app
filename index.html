@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="left-container">
+
+                <!-- login-card -->
+
+                <div class="login">
+                    <h1 style="color: #060270;margin:10px auto;width:fit-content;">Login</h1>
+                    <span style="color: darkgrey;">Doesn't have an account yet?</span>
+                    <button class="signup" type="button" onclick="signup()">Sign Up</button>
+                    <form>
+                        <div style="margin: 30px 0px 5px 0px;">
+                            <label style="margin: 20px 0px;" for="logemail">UserId</label><br>
+                        </div>
+                        <input class="email" id="logemail" style="padding: 15px;width:calc(100% - 34px);border-radius: 5px;border:2px solid darkgrey" type="email"  placeholder="you@example.com" onchange="onchangehandler(event,'email1')"><br>
+                        <div class="psd">
+                            <label for="logpassword">Password</label><br>
+                            <a href="#" style="color: #8C4DDF;">Forgot password?</a>
+                        </div>
+                        <input class="password" id="logpassword" style="padding: 15px;width:calc(100% - 34px);border-radius: 5px;border:2px solid darkgrey"  type="password" placeholder="Enter 6 characters or more" onchange="onchangehandler(event,'password1')"><br>
+                        <div style="margin: 30px 0px;">
+                            <input id="check" style="size:20px;accent-color:#8C4DDF" type="checkbox">
+                            <label for="check" style="color: darkgrey;">Remember me</label>
+                        </div>
+                        <button style="padding: 15px;width:100% ;border-radius: 5px;background-color: #8C4DDF;color:#fff;font-size: 16px;" type="button" onclick="onloghandler()">LOGIN</button>
+                        <div class="login-with">
+                            <div style="border-top:1px solid black"></div>
+                            <p>or login with</p>
+                            <div style="border-top:1px solid black"></div>
+                        </div>
+                        <div class="social-media-btn">
+                            <button style="width: 45%;height:50px;border:2px solid red;background-color:#fff;color:red"><i class="fa fa-google" aria-hidden="true" style="margin-right:10px;font-weight:900"></i>Google</button>
+                            <button style="width: 45%;height:50px;border:2px solid dodgerblue;background-color:#fff;color:dodgerblue"><i class="fa fa-facebook" aria-hidden="true" style="margin-right: 10px;font-weight:900"></i>Facebook</button>
+                        </div>
+                    </form>
+                </div> 
+
+                <!-- register-card -->
+
+                <div class="register">
+                    <h1 style="color: #060270;margin:10px auto;width:fit-content">Register</h1>
+                    <span style="color: darkgrey;">Already have an account</span>
+                    <button type="button" style="all:unset;color: #8C4DDF;text-decoration:underline" onclick="log()">Login</button>
+                    <form>
+                        <div class="reg-label">
+                            <label for="username">User Name</label><br>
+                            <input id="username" style="padding: 15px;width:calc(100% - 34px);border-radius: 5px;border:2px solid darkgrey" type="text"  placeholder="" onchange="onchanged(event,'username')"><br>
+                        </div>
+                        <div class="reg-label">
+                            <label for="email">Email</label><br>
+                            <input  id="email" style="padding: 15px;width:calc(100% - 34px);border-radius: 5px;border:2px solid darkgrey"  type="email" placeholder="" onchange="onchanged(event,'email')"><br>
+                        </div>
+                        <div class="reg-label">
+                            <label style="margin: 20px 0px;" for="phoneno">Phone No</label><br>
+                            <input id="phoneno" style="padding: 15px;width:calc(100% - 34px);border-radius: 5px;border:2px solid darkgrey" type="tel"  placeholder="" onchange="onchanged(event,'phoneno')"><br>
+                        </div>
+                        <div class="reg-label">
+                            <label for="password">Password</label><br>
+                            <input id="password" style="padding: 15px;width:calc(100% - 34px);border-radius: 5px;border:2px solid darkgrey"  type="password" placeholder="" onchange="onchanged(event,'password')"><br>
+                        </div>
+                        <div class="reg-label">
+                            <label for="repassword">Confirm Password</label><br>
+                            <input id="repassword" style="padding: 15px;width:calc(100% - 34px);border-radius: 5px;border:2px solid darkgrey"  type="password" placeholder="" onchange="onchanged(event,'repassword')"><br>
+                        </div>
+                
+                        <button style="padding: 15px;width:100% ;border-radius: 5px;background-color: #8C4DDF;color:#fff;font-size: 16px;margin:20px 0px 0px 0px;" type="button" onclick="onregister()">Register</button>
+                    </form>
+                </div> 
+
+            </div>
+
+            <div class="right-container">
+                <img style="width: 100%;" src="6184159_3094352.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
